@@ -1,9 +1,8 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default async function Home() {
-  let response = await fetch('https://whale-app-zgtcy.ondigitalocean.app/api/under-construction');
-  let data = await response.json();
+  const response = await fetch('https://whale-app-zgtcy.ondigitalocean.app/api/under-construction');
+  const data = await response.json();
 
   console.log("Fetched Data (Server-side):", data); // Logs in Terminal
 

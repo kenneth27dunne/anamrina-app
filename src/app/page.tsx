@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 
 export default async function Home() {
-  const response = await fetch('https://whale-app-zgtcy.ondigitalocean.app/api/under-construction');
+  const response = await fetch('https://whale-app-zgtcy.ondigitalocean.app/api/under-construction', {cache: 'no-store'});
   const data = await response.json();
 
   console.log("Fetched Data (Server-side):", data); // Logs in Terminal

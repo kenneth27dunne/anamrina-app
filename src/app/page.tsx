@@ -13,12 +13,13 @@ export default async function Home() {
   const { Title, subHeading, contactEmail } = data.data;
 
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-       <h1>{Title}</h1>    
-       <h4>{subHeading}</h4>    
-       <p>{contactEmail}</p>
-      </main>
+    <div className={styles.container}>
+        <div className={styles.containerInner}>
+        <img src="images/Anamrina.png" alt="Recruitment Co. Logo" className={styles.logo} />
+        <h1>{Title}</h1>
+        <p>{subHeading}</p>    
+        <p>{contactEmail}</p>
+    </div>
     </div>
   );
 }
